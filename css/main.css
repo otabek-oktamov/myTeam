@@ -652,6 +652,7 @@ h3 {
             transform: translateX(700px);
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
+    position: fixed;
   }
   .header__open-nav div {
     position: absolute;
