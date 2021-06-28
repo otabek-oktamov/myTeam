@@ -1,3 +1,6 @@
+
+// header section styles 
+
 .header {
     padding-top: 73px;
 }
@@ -25,7 +28,6 @@
     flex: 1;
 }
 
-
 .header__list {
     display: flex;
     align-items: center;
@@ -49,8 +51,6 @@
         color: $Light-Coral;
     }
 }
-
-
 
 .burger-btn {
     cursor: pointer;
@@ -123,14 +123,11 @@
     }
 }
 
-
 @media only screen and(max-width:550px) {
-
-
     .header {
         padding-top: 48px;
         position: relative;
-        overflow-x: hidden
+        overflow-x: hidden;
     }
 
     .header.header__active {
@@ -160,6 +157,10 @@
         position: fixed;
     }
 
+    .header__nav {
+        flex: 0;
+    }
+
     .header__open-nav div {
         position: absolute;
         flex: 0;
@@ -171,7 +172,6 @@
         top: 0;
         align-items: flex-start;
         height: 100vh;
-
     }
 
     .header__item {
@@ -182,7 +182,8 @@
         flex-direction: column;
         margin-bottom: 30px;
     }
-.header__open-nav--active{
-    transform: translateX(0px);
-}
+
+    .header__open-nav--active {
+        transform: translateX(0px);
+    }
 }

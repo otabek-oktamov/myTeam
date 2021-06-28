@@ -69,6 +69,7 @@ h3 {
     background: transparent;
     color: white;
     transition: 0.3s ease;
+    white-space: nowrap;
 
     &:hover {
         color: $midnight-Green;
