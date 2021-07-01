@@ -1,0 +1,127 @@
+.distributed {
+    padding: 140px 0px;
+    background-color: #012f34;
+    position: relative;
+}
+
+.distributed__list::after {
+    content: '';
+    width: 100px;
+    height: 244px;
+    display: block;
+    background-image: url('../img/ring.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.distributed__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.distributed__container h2 {
+    max-width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+}
+
+.distributed__container h2::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: $Light-Coral;
+    margin-bottom: 54px;
+}
+
+.distributed__list {
+    list-style: none;
+    padding: 0;
+    max-width: 540px;
+}
+
+.distributed h3 {
+    color: $Light-Coral;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.distributed p {
+    font-size: 15px;
+}
+
+.distributed__item {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.distributed__item::before {
+    content: '';
+    width: 140px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 23px;
+}
+
+.distributed__item--first::before {
+    background-image: url(../img/person1.svg);
+}
+
+.distributed__item--second::before {
+    background-image: url('../img/person2.svg');
+}
+
+.distributed__item--three::before {
+    background-image: url('../img/person3.svg');
+}
+
+
+@media only screen and (max-width:815px){
+    .distributed__container{
+        flex-direction: column;
+    padding-left: 90px;
+    padding-right: 90px;
+    }
+    .distributed__container h2{
+        width: 100% !important;
+        font-size: 32px;
+    }
+    .distributed__list::after{
+        top: 0;
+    }
+    .distributed__container h3{
+        font-size: 18px;
+    }
+}
+
+@media only screen and(max-width:550px) {
+    .container{
+        padding: 0px 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .distributed__item{
+        flex-direction: column;
+        text-align: center;
+    }
+    .distributed{
+        padding-bottom: 64px;
+    }
+    
+}
+
+
+@media only screen and (max-width:430px){
+    .distributed__container h2{
+        width: 100% !important;
+        font-size: 25px;
+        z-index: 99;
+    }
+}

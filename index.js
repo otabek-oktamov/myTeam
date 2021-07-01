@@ -15,7 +15,7 @@ var element = {
       element.select.className = element.select.className + " active";
     }
     setTimeout(function(){document.querySelector('.header').classList.toggle('header__active') }, 200);
-    document.body.classList.toggle('body__scroll')
+    document.querySelector('.body').classList.toggle('body__sc')
     document.querySelector('.header__open-nav').classList.toggle('header__open-nav--active')
     
   };

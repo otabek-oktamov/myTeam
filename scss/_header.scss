@@ -125,7 +125,7 @@
 
 @media only screen and(max-width:550px) {
     .header {
-        padding-top: 48px;
+        padding-top: 100px;
         position: relative;
         overflow-x: hidden;
     }
@@ -137,11 +137,15 @@
     .header__container {
         justify-content: flex-start;
     }
-
+.header__logo{
+    position: absolute;
+    top: 48px;
+}
     .burger-btn {
         display: block;
         top: 48px;
         right: 10%;
+        z-index:99;
     }
 
     .header__open-nav {
@@ -155,6 +159,7 @@
         transform: translateX(700px);
         transition: 0.5s ease;
         position: fixed;
+        z-index:99;
     }
 
     .header__nav {
@@ -172,6 +177,7 @@
         top: 0;
         align-items: flex-start;
         height: 100vh;
+        z-index: 99;
     }
 
     .header__item {
@@ -185,5 +191,21 @@
 
     .header__open-nav--active {
         transform: translateX(0px);
+    }
+}
+
+@media only screen and (max-width:350px) {
+   .header__open-nav div{
+       width: 80vw;
+   }
+}
+
+@media only screen and (max-width:250px) {
+    .header__open-nav div{
+        width: 100vw !important;
+    }
+    .header__logo{
+        top: 53px;
+        width: 120px;
     }
 }

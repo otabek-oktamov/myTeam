@@ -2,6 +2,8 @@
     padding-top: 120px;
     padding-bottom: 250px;
     position: relative;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .talent__container {
@@ -133,5 +135,13 @@
         position: absolute;
         bottom: 0;
 
+    }
+}
+@media only screen and (max-width:250px) {
+    .talent{
+        padding-top: 20px;
+    }
+    .talent__title{
+        font-size: 25px;
     }
 }

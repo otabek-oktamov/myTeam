@@ -20,7 +20,9 @@ body {
     color: $White;
     background-color: $midnight-Green;
 }
-
+.body__sc{
+    overflow:hidden;
+}
 .container {
     width: 100%;
     max-width: 1200px;
@@ -106,4 +108,10 @@ h3 {
 
 .btn-secondary--disabled{
     opacity: 0.25;
+}
+
+@media only screen and (max-width:370px){
+    .btn-primary{
+        padding: 8px 20px;
+    }
 }
