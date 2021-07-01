@@ -105,11 +105,21 @@ h3 {
         background-color: #9ee7e6;
     }
 }
-
+.deep{
+    color: $Deep-Jungle-Green;
+    border: 1px solid $Deep-Jungle-Green;
+    display: inline-block;
+}
+.deep:hover{
+    color: white;
+    background-color: $Deep-Jungle-Green;
+}
 .btn-secondary--disabled{
     opacity: 0.25;
 }
-
+a{
+    text-decoration: none;
+}
 @media only screen and (max-width:370px){
     .btn-primary{
         padding: 8px 20px;

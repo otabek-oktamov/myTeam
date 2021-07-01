@@ -1,0 +1,52 @@
+.start{
+    padding: 76px 0px;
+    background-color: $Light-Coral;
+    position: relative;
+}
+.start__container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    max-width: 1000px;
+
+    display: flex;
+}
+.start h2{
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: $Deep-Jungle-Green;
+}
+.start h2::before{
+    width: 200px;
+    height: 140px;
+    content: '';
+    background-image: url('../img/readystart.svg');
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@media only screen and (max-width:768px) {
+    .start h2{
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width:550px) {
+    .start__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .start h2{
+     max-width: 327px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .deep{
+        max-width: 153px;
+    }
+}

@@ -461,8 +461,23 @@ h3 {
   background-color: #9ee7e6;
 }
 
+.deep {
+  color: #004047;
+  border: 1px solid #004047;
+  display: inline-block;
+}
+
+.deep:hover {
+  color: white;
+  background-color: #004047;
+}
+
 .btn-secondary--disabled {
   opacity: 0.25;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 370px) {
@@ -1040,6 +1055,7 @@ h3 {
   background-color: #004047;
   text-align: center;
   position: relative;
+  margin-bottom: 0px;
 }
 
 .deliver h2 {
@@ -1148,10 +1164,90 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+  .deliver {
+    padding: 100px 0px;
+  }
+  .deliver h2 {
+    font-size: 32px;
+  }
   .deliver__item {
     width: calc(100% / 1);
     margin-bottom: 50px;
     margin: auto;
+  }
+  .deliver__item {
+    margin-bottom: 50px;
+  }
+  .deliver__list {
+    margin-left: 0;
+  }
+}
+
+.start {
+  padding: 76px 0px;
+  background-color: #F67E7E;
+  position: relative;
+}
+
+.start__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.start h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #004047;
+}
+
+.start h2::before {
+  width: 200px;
+  height: 140px;
+  content: '';
+  background-image: url("../img/readystart.svg");
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .start h2 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .start__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .start h2 {
+    max-width: 327px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .deep {
+    max-width: 153px;
   }
 }
 /*# sourceMappingURL=main.css.map */

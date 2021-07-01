@@ -3,6 +3,7 @@
     background-color: $Deep-Jungle-Green;
     text-align: center;
     position: relative;
+    margin-bottom: 0px;
 }
 
 .deliver h2 {
@@ -102,9 +103,21 @@
     }
 }
 @media only screen and (max-width:768px){
+    .deliver{
+        padding: 100px 0px;
+    }
+    .deliver h2{
+        font-size: 32px;
+    }
     .deliver__item{
         width:calc(100% / 1);
         margin-bottom: 50px;
         margin: auto;
+    }
+    .deliver__item{
+        margin-bottom: 50px;
+    }
+    .deliver__list{
+        margin-left: 0;
     }
 }
