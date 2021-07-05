@@ -34,3 +34,9 @@ var element = {
     }
   }
   
+
+ document.querySelectorAll('.meet-section__add').forEach(item =>{
+   item.addEventListener('click',()=>{
+     item.classList.toggle('meet-section__close')
+   })
+ })
