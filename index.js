@@ -42,7 +42,7 @@ document.querySelectorAll('.meet-section__add').forEach(item => {
 })
 
 let inp = document.querySelectorAll('#name');
-function check() {
+
   inp.forEach(item => {
 
     item.addEventListener('input', () => {
@@ -57,13 +57,6 @@ function check() {
       }
     })
   })
-}
-inp.forEach(item => {
-
-  item.addEventListener('input', () => {
-    check()
-  })
-})
 
 
 function ValidateEmail(inputText) {
