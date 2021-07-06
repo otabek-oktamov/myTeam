@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="body">
+    <!-- header section started -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <img src="./img/myteam-logo.svg" alt="logo" width="160" height="40" />
+            </a>
+            <div class="header__open-nav">
+                <div>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="index.html" class="header__link">home</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="about.html" class="header__link">about</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <button class="btn-primary">Contact us</button>
+                </div>
+            </div>
+            <a class="burger-btn"><span class="lines"></span></a>
+        </div>
+    </header>
+
+ <main class="contact-main">
+     <div class="contact-section">
+         <div class="container contact-section__container">
+             <div class="contact-section__content">
+                 <h2>Contact</h2>
+                 <h3>Ask us about</h3>
+
+                 <ul>
+                     <li>The quality of our talent network</li>
+                     <li>Usage & implementation of our software</li>
+                     <li>How we help drive innovation</li>
+                 </ul>
+             </div>
+             <form name="form">
+                <label>
+                    <input type="text" id="name" placeholder="Name" required>
+                </label>
+                <label>
+                    <input type="email" id="mail" name="mail" placeholder="Email Address" oninput="ValidateEmail(document.form.mail)"  required>
+                </label>
+                <label>
+                    <input type="text" id="name" placeholder="Company Name" required>
+                </label>
+
+                <label>
+                    <input type="text" id="name" placeholder="Title" required>
+                </label>
+
+                <textarea name="text" placeholder="Message"></textarea>
+
+                <button type="submit" class="btn-secondary contact-section__submit">submit</button>
+             </form>
+         </div>
+     </div>
+ </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__div">
+                <a href="#" class="footer__logo">
+                    <img src="./img/myteam-logo.svg" alt="logo" width="160" height="40">
+                </a>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#">home</a></li>
+                    <li class="footer__nav-item"><a href="#">about</a></li>
+                </ul>
+            </div>
+            <ul class="footer__adress-link">
+                <li>987 Hillcrest Lane</li>
+                <li>Irvine, CA</li>
+                <li>California 92714</li>
+                <li><a href="tel:949-833-7432">Call Us : 949-833-7432</a></li>
+            </ul>
+            <div class="footer__icon-list">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <p>Copyright 2020. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
